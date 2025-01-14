@@ -1,16 +1,20 @@
 {
-    "name": "my-react-app",
-    "version": "1.0.0",
-    "description": "A collaborative React project",
+    "name": "ecoshoppr",
+    "version": "0.1.0",
+    "description": "EcoShoppr is a platform which is designed to help consumers save money and optimize their grocery budgets.",
     "main": "src/index.js",
     "scripts": {
       "start": "react-scripts start",
-      "build": "react-scripts build",
+      "build": "react-scripts build", 
       "test": "react-scripts test",
-      "eject": "react-scripts eject"
+      "eject": "react-scripts eject",
+      "lint": "eslint src/**/*.js",
+      "format": "prettier --write src/**/*.js",
+      "precommit": "npm run lint && npm run format",
+      "analize": "source-map-explorer 'build/static/js/*.js'"
     },
-    "keywords": ["react", "collaboration", "frontend"],
-    "author": "Your Name",
+    "keywords": ["react", "collaboration", "frontend", "web app"],
+    "author": "EcoShoppr",
     "license": "MIT",
     "dependencies": {
       "react": "^18.2.0",
