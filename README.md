@@ -18,6 +18,6 @@ We also try to work with small businesses to create an online presence in which 
     docker-compose up
     http://localhost:3000
 
-5: Add Dependencies
+5: Add Extra Dependencies
 docker run -it --rm -v $(pwd):/app -w /app my-react-app npm install <dependency>
 
