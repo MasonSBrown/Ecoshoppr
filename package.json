@@ -1,35 +1,36 @@
 {
-    "name": "ecoshoppr",
-    "version": "0.1.0",
-    "description": "EcoShoppr is a platform which is designed to help consumers save money and optimize their grocery budgets.",
-    "main": "src/index.js",
-    "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build", 
-      "test": "react-scripts test",
-      "eject": "react-scripts eject",
-      "lint": "eslint src/**/*.js",
-      "format": "prettier --write src/**/*.js",
-      "precommit": "npm run lint && npm run format",
-      "analize": "source-map-explorer 'build/static/js/*.js'"
-    },
-    "keywords": ["react", "collaboration", "frontend", "web app"],
-    "author": "EcoShoppr",
-    "license": "MIT",
-    "dependencies": {
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "react-scripts": "5.0.1",
-      "axios": "^1.4.0",
-      "react-router-dom": "^6.12.0"
-    },
-    "devDependencies": {
-      "eslint": "^8.47.0",
-      "eslint-plugin-react": "^7.33.0"
-    },
-    "engines": {
-      "node": ">=18.0.0",
-      "npm": ">=9.0.0"
-    }
+  "name": "ecoshoppr",
+  "version": "0.1.0",
+  "description": "EcoShoppr is a platform which is designed to help consumers save money and optimize their grocery budgets.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build", 
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.js",
+    "precommit": "npm run lint && npm run format",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "keywords": ["react", "collaboration", "frontend", "web app"],
+  "author": "EcoShoppr",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "axios": "^1.4.0",
+    "react-router-dom": "^6.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-plugin-react": "^7.33.0",
+    "prettier": "^3.0.0",
+    "source-map-explorer": "^2.5.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
-  
+}
