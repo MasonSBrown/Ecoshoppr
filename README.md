@@ -11,12 +11,10 @@ We also try to work with small businesses to create an online presence in which 
 
 ## Running the Project with Docker
 1: Install Docker
-2: Clone the Repository
-3: Go to project directory
-4: Run the app:
-    docker-compose up -d --build
-    http://localhost:3000
+2: docker pull masonsbrown/ecoshoppr:latest
+3: docker run -d -p 3000:3000 masonsbrown/eccoshoppr
+visit your browser!
 
-5: Add Extra Dependencies
-docker run -it --rm -v $(pwd):/app -w /app my-react-app npm install <dependency>
-
+(To stop container:)
+1: docker ps
+2: docker stop <container-id>
