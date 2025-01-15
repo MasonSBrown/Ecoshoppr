@@ -1,5 +1,5 @@
-# Use an official Node.js image
-FROM node:18
+# Use an official Node.js image that supports multiple architectures
+FROM --platform=$BUILDPLATFORM node:18-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --production
 
 # Copy the rest of the application files
 COPY . .
@@ -16,5 +16,5 @@ COPY . .
 # Expose the port your React app runs on
 EXPOSE 3000
 
-# Command to run the application
+# Specify the default command to run the application
 CMD ["npm", "run", "dev"]
