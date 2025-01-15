@@ -14,8 +14,7 @@ We also try to work with small businesses to create an online presence in which 
 2: Clone the Repository
 3: Go to project directory
 4: Run the app:
-    docker-compose up --build
-    docker-compose up
+    docker-compose up -d --build
     http://localhost:3000
 
 5: Add Extra Dependencies
