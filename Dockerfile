@@ -1,5 +1,5 @@
 # Use an official Node.js image that supports multiple architectures
-FROM --platform=$BUILDPLATFORM node:18-alpine
+FROM node:18-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
